@@ -20,12 +20,12 @@ foreach ($sth as $row) {
     echo "<p><a href='series_edit.php?id=$row[ID]'>Edit</a></p>" ; 
 };
 
-echo "<h1>" . $title ." - " . $rating . "</h1>";
+echo "<h1>" . $title . " - " . $rating . "</h1>";
 echo "<h3>Awards?: " . $awards . "</h3>";
 echo "<h3>Seasons: " . $season . "</h3>";
 echo "<h3>Country: " . $country . "</h3>";
 echo "<h3>Language: " . $language . "</h3>";
-echo "<p>".$description."</p>";
+echo "<p>" . $description . "</p>";
 echo "<body style='background-color:pink'>";
 
 

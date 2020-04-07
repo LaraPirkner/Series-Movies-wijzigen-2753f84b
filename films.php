@@ -20,10 +20,10 @@ foreach ($sth as $row) {
 echo "<p><a href='index.php'>Terug</a></p>" ; 
 echo "<p><a href='films_edit.php?id=$row[ID]'>Edit</a></p>" ; 
 
-echo "<h1>" . $title ."  " . $duur . " minuten </h1>";
-echo "<h3>Release datum: " . $datum ."</h3>";
-echo "<h3>Land van herkomst: " . $land ."</h3>";
-echo "<p>".$description."</p>";
-echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/'.$video.'
+echo "<h1>" . $title . "  " . $duur . " minuten </h1>";
+echo "<h3>Release datum: " . $datum . "</h3>";
+echo "<h3>Land van herkomst: " . $land . "</h3>";
+echo "<p>" . $description . "</p>";
+echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/' . $video . '
     " frameborder="0" allow="accelerometer autoplay encrypted-media gyroscope picture-in-picture" allowfullscreen></iframe>';
 echo "<body style='background-color:pink'>";

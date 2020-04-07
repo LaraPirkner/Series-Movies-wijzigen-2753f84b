@@ -22,13 +22,13 @@ echo "<a href='index.php?sort=Title'>Title</a><a href='index.php?sort=Rating'>Ra
 echo "<table>";
 if (isset($_GET['sort'])) {
     $data = $pdo->query("SELECT * FROM series ORDER BY " . $_GET['sort'] . " ASC")->fetchAll();
-}else{
-$data = $pdo->query("SELECT * FROM series")->fetchAll();
+} else {
+    $data = $pdo->query("SELECT * FROM series")->fetchAll();
 }
 echo "<tr>";
 foreach ($data as $row) {
-    echo "<td>". $row['Title']. "</td>";
-    echo "<td>" .$row['Rating']."</td>";
+    echo "<td>" . $row['Title'] . "</td>";
+    echo "<td>" . $row['Rating'] . "</td>";
     echo "<td><a href='series.php?id=$row[ID]'>Info</a></td>" ;
     echo "</tr>";
 }
@@ -44,13 +44,13 @@ echo "<a href='index.php?sortF=Title'>Title</a><a href='index.php?sortF=Duur'>Du
 echo "<table>";
 if (isset($_GET['sortF'])) {
     $data = $pdo->query("SELECT * FROM films ORDER BY " . $_GET['sortF'] . " ASC")->fetchAll();
-}else{
-$data = $pdo->query("SELECT * FROM films")->fetchAll();
+} else {
+    $data = $pdo->query("SELECT * FROM films")->fetchAll();
 }
 echo "<tr>";
 foreach ($data as $row) {
-    echo "<td>". $row['Title']."</td>"; 
-    echo "<td>". $row['Duur']."</td>";
+    echo "<td>" . $row['Title'] . "</td>"; 
+    echo "<td>" . $row['Duur'] . "</td>";
     echo "<td><a href='films.php?id=$row[ID]'>Info</a></td>" ;
     echo "</tr>";
 }

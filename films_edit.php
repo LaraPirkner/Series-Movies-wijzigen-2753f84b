@@ -6,7 +6,7 @@ echo "<p><a href='index.php'>Terug</a></p>" ;
 if (isset($_GET['id'])) {
     $id = htmlspecialchars($_GET['id']);
 };
-$sql= ("SELECT * FROM films WHERE ID = :id");
+$sql = ("SELECT * FROM films WHERE ID = :id");
 $sth = $pdo->prepare($sql);
 $sth->execute(array(':id' => $id));
 foreach ($sth as $row) { 
