@@ -25,7 +25,8 @@ foreach ($sth as $row) {
     echo  "<p>Country <input type='text' name='Country' value=" . $country . "></p>";
     echo  "<p>Langauge <input type='text' name='Language' value=" . $language . "></p>";
     echo  "<p>Awards <input type='text' name='Awards' value=" . $awards . "></p>";
-    echo  "<p>Description <textarea type='text' name='Description' rows='15' cols='40'>" . $description . "</textarea></p>";
+    echo  "<p>Description <textarea type='text' name='Description' 
+    rows='15' cols='40'>" . $description . "</textarea></p>";
     echo  "<input type='submit' value='edit'>";
     echo  "</form>"; 
     
