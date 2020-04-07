@@ -12,7 +12,7 @@ $video = $_POST['Video'];
 
 $sql = "UPDATE films SET Title = ? , Duur = ?, Datum = ?, Land = ?,
 Description = ?, Video = ?  where id = ?";
-$stnt=$pdo->prepare($sql);
+$stnt = $pdo->prepare($sql);
 $stnt->execute([$title,$duur,$datum,
 $land,$description,$video,$id]);
 

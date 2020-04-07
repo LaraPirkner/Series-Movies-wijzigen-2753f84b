@@ -13,7 +13,7 @@ $language = $_POST['Language'];
 
 $sql = "UPDATE series SET Title = ? , Rating = ?,
 Description = ?, Awards = ?, Season = ?, Country = ?, Language = ?  where id = ?";
-$stnt=$pdo->prepare($sql);
+$stnt = $pdo->prepare($sql);
 $stnt->execute([$title,$rating,$description,
 $awards,$seasons,$country,$language,$id]);
 
